@@ -1,0 +1,169 @@
+.newsFeed {
+    flex-direction: column;
+}
+.newsFeed .postItem {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    /*margin-bottom: 20px;*/
+    justify-content: center;
+    border-bottom: 3px solid darkgray;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+}
+.newsFeed .postItem:last-child {
+    border-bottom: none;
+    margin-bottom: -22px;
+}
+/*.news-item::after{
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    width: 75%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: rgb(133,162,255);
+}*/
+
+#template {
+    display: none;
+}
+
+.newsFeed .item-img {
+    align-items: center;
+    height: 100%;
+}
+
+.newsFeed .creationDate {
+    line-height: 2.5;
+}
+
+.newsFeed .description {
+    line-height: 23px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+/*.tags a:hover, .tags a.active {
+    opacity: 1;
+}*/
+#tagBlock {
+    display: none;
+    justify-content: space-between;
+}
+
+#tagBlock div {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+#tagBlock div.selected {
+    opacity: 0.9;
+}
+
+#tagBlock div:last-child{
+    opacity: 1;
+    background-color: #333333;
+    margin-right: 0;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.5;
+    padding: 0 15px;
+}
+
+.tagsAndDate {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tagsAndDate .tags{
+    display: flex;
+}
+
+.tags div[data-tag] {
+    color: #fff;
+    opacity: 0.9;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.5;
+    padding: 0 15px;
+    margin-right: 5px;
+}
+
+.newsFeed {
+    padding-top: 50px;
+}
+.newsFeed .item-about {
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 30px;
+    position: relative;
+}
+
+.remove-item {
+    cursor: pointer;
+    font-size:14px;
+    color: rgb(133, 162, 255);
+}
+
+.item-about .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    /*text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.postItem .delete{
+    display: inline-block;
+    background: #e74c3c;
+    width: 1em;
+    height: 1em;
+    line-height: 0.96;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: normal;
+    border-radius: 1em;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+div[data-tag="Business"] {
+    background-color: #2980b9;
+}
+
+div[data-tag=Sport] {
+    background-color: #f39c12;
+}
+
+div[data-tag=Politics] {
+    background-color: #3498db;
+}
+
+div[data-tag=Food] {
+    background-color: #e74c3c;
+}
+
+div[data-tag=Tech] {
+    background-color: #1abc9c;
+}
+
+div[data-tag=Culture] {
+    background-color: #9b59b6;
+}
+
+div[data-tag=Showbiz] {
+    background-color: #2ecc71;
+}

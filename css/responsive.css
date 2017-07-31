@@ -1,0 +1,49 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    .wrapper main>div {min-width: 199px;}
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 575px) {
+    footer .bottomPart .leftSide {display: none;}
+    footer .bottomPart .rightSide {margin: 0 auto;}
+    .wrapper nav ul li {line-height: 2.4em;}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    footer {padding-top: 10px; margin: 10px 10px 0 70px;}
+    footer .topPart {display: flex;}
+    footer hr {display: inherit}
+    #menu, #menu ul, #menu ul li, #menu ul li a, #menu #menu-button {line-height: 2}
+    #menu #menu-button:before {top: 22px;}
+    #menu #menu-button:after {top: 28px;}
+    #menu #menu-button.menu-opened:before {top: 29px;}
+    #menu #menu-button.menu-opened:after {top: 29px;}
+    .wrapper nav {width: 60px;}
+    .wrapper nav ul li {padding: 5px; line-height: 3em;}
+    .menuIcon {width: 30px;}
+    .wrapper main>div:nth-child(2) {height: calc(100vh - 78px);}
+    header {height: 58px;}
+    .search {top: 9px;}
+    .search input { margin-left: 0;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .wrapper nav { width: auto; }
+    .wrapper nav ul { min-width: 300px; position: inherit}
+    .wrapper nav ul li { border-bottom: 1px solid #fff; }
+    .wrapper nav ul li:hover {
+        color: #111111;
+        border-left: 3px solid #3b3d3e;
+        font-size: 1.1em;
+    }
+    .wrapper nav ul li span { display: inline-block; }
+    footer {margin: 10px 0 0;}
+}
